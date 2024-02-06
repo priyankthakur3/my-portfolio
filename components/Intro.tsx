@@ -52,7 +52,7 @@ export default function Intro() {
           duration: 0.3,
         }}
       >
-        <span className="font-bold">Hello, I'm Priyank</span>
+        <span className="font-bold">Hello, I am Priyank</span>
         <span>
           , Software Developer with 3 years of experience in Data Engineering. I
           enjoy building <span className="italic">sites & apps</span> and binge
