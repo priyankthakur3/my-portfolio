@@ -2,7 +2,7 @@
 import { projectsData } from "@/lib/data";
 import React, { useRef } from "react";
 import Image from "next/image";
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 type ProjectProps = (typeof projectsData)[0];
 
 export default function Project({
@@ -17,21 +17,24 @@ export default function Project({
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+  const opactityProgress = useTransform(scrollYProgress, [0, 1], [0.4, 1]);
+
   return (
     <motion.div
       style={{
-        scale: scrollYProgress,
-        opacity: scrollYProgress,
+        scale: scaleProgress,
+        opacity: opactityProgress,
       }}
       ref={ref}
       className="group mb-3 sm:m-8 last:mb-0"
     >
       <section
         className="bg-gray-100 max-w-[42rem] border border-black/5 
-            overflow-hidden sm:pr-8 relative sm:h-[20rem]
+            overflow-hidden sm:pr-8 relative sm:h-[20rem] rounded-lg
             even:pl-8 hover:bg-gray-200 transition"
       >
-        <div className="pt-4 pb-7 py-4 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[18rem]">
+        <div className="pt-4 pb-7 py-4 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[18rem] group-even:pl-20">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">

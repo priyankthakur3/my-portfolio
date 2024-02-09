@@ -1,13 +1,23 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin, BsGithub } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
+import { useInView } from "react-intersection-observer";
+import { useActiveSessionContext } from "@/context/ActiveSession";
 export default function Intro() {
+  const { ref, inView } = useInView({ threshold: 0.75 });
+  const { setActiveSession } = useActiveSessionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSession("Home");
+    }
+  }, [inView]);
   return (
-    <section className="mb-15 max-w-[50rem]">
+    <section ref={ref} className="mb-15 max-w-[50rem]">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -56,7 +66,7 @@ export default function Intro() {
         <span>
           , Software Developer with 3 years of experience in Data Engineering. I
           enjoy building <span className="italic">sites & apps</span> and binge
-          watch Mystery, Sci-fi genre movies and TV Series. My Current focus is
+          watch Mystery, Sci-fi genre movies and TV Series. My Current focus is{" "}
           <span className="underline">React (Next.js), Spring Boot</span>
         </span>
       </motion.p>
