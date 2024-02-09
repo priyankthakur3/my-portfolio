@@ -79,20 +79,20 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData: Project[] = [
-  {
-    title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
-  },
-  {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
+  // {
+  //   title: "CorpComment",
+  //   description:
+  //     "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+  //   tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+  //   imageUrl: corpcommentImg,
+  // },
+  // {
+  //   title: "rmtDev",
+  //   description:
+  //     "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+  //   tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+  //   imageUrl: rmtdevImg,
+  // },
   {
     title: "Click Chaser",
     description: "A public web app for Counting clicks.",
