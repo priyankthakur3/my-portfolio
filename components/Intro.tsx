@@ -56,7 +56,7 @@ export default function Intro() {
         <span>
           , Software Developer with 3 years of experience in Data Engineering. I
           enjoy building <span className="italic">sites & apps</span> and binge
-          watch Mystery, Sci-fi genre movies and TV Series. My Current focus is{" "}
+          watch Mystery, Sci-fi genre movies and TV Series. My Current focus is
           <span className="underline">React (Next.js), Spring Boot</span>
         </span>
       </motion.p>
