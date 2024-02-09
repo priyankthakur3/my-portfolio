@@ -5,17 +5,10 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin, BsGithub } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { useInView } from "react-intersection-observer";
-import { useActiveSessionContext } from "@/context/ActiveSession";
-export default function Intro() {
-  const { ref, inView } = useInView({ threshold: 0.75 });
-  const { setActiveSession } = useActiveSessionContext();
+import { useSectionInView } from "@/lib/hooks";
 
-  useEffect(() => {
-    if (inView) {
-      setActiveSession("Home");
-    }
-  }, [inView]);
+export default function Intro() {
+  const { ref } = useSectionInView("Home");
   return (
     <section ref={ref} className="mb-15 max-w-[50rem]">
       <div className="flex items-center justify-center">

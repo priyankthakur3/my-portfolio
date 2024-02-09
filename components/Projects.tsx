@@ -3,17 +3,10 @@ import React, { useEffect } from "react";
 import SectionHeader from "./SectionHeader";
 import { projectsData } from "@/lib/data";
 import Project from "./Project";
-import { useInView } from "react-intersection-observer";
-import { useActiveSessionContext } from "@/context/ActiveSession";
-export default function Projects() {
-  const { ref, inView } = useInView({ threshold: 0.5 });
-  const { setActiveSession } = useActiveSessionContext();
+import { useSectionInView } from "@/lib/hooks";
 
-  useEffect(() => {
-    if (inView) {
-      setActiveSession("Projects");
-    }
-  }, [inView]);
+export default function Projects() {
+  const { ref } = useSectionInView("Projects", 0.2);
   return (
     <section ref={ref} id="projects" className="scroll-mt-20">
       <SectionHeader>My Projects</SectionHeader>
