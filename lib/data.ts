@@ -2,18 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import { StaticImageData } from "next/image";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import clickchaser from "@/public/clickchaser.png";
+import { Project } from "./types";
 
-type imageUrl = string;
-interface Project {
-  title: string;
-  description: string;
-  tags: string[];
-  imageUrl: StaticImageData; // Assuming imageUrl is a string
-}
 export const links = [
   {
     name: "Home",
@@ -79,20 +72,20 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData: Project[] = [
-  // {
-  //   title: "CorpComment",
-  //   description:
-  //     "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-  //   tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-  //   imageUrl: corpcommentImg,
-  // },
-  // {
-  //   title: "rmtDev",
-  //   description:
-  //     "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-  //   tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-  //   imageUrl: rmtdevImg,
-  // },
+  {
+    title: "CorpComment",
+    description:
+      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    imageUrl: corpcommentImg,
+  },
+  {
+    title: "rmtDev",
+    description:
+      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    imageUrl: rmtdevImg,
+  },
   {
     title: "Click Chaser",
     description: "A public web app for Counting clicks.",
@@ -102,23 +95,23 @@ export const projectsData: Project[] = [
 ];
 
 export const skillsData = [
-  "HTML",
-  "CSS",
+  "Python",
+  "Java",
+  "SQL",
   "JavaScript",
   "TypeScript",
+  "Teradata Database",
+  "MongoDB",
+  "PostgresSQL",
+  "HTML",
+  "CSS",
   "React",
   "Next.js",
   "Node.js",
+  "Express.js",
+  "Apollo",
   "Git",
   "Tailwind",
-  "Teradata Database",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
   "Django",
-  "Framer Motion",
+  "FastAPI",
 ] as const;
