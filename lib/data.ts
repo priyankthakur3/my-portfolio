@@ -5,7 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import { StaticImageData } from "next/image";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import clickchaser from "@/public/clickchaser.png";
 
 type imageUrl = string;
 interface Project {
@@ -22,6 +22,10 @@ export const links = [
   {
     name: "About",
     hash: "#about",
+  },
+  {
+    name: "Stats",
+    hash: "#stats",
   },
   {
     name: "Projects",
@@ -90,11 +94,10 @@ export const projectsData: Project[] = [
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    title: "Click Chaser",
+    description: "A public web app for Counting clicks.",
+    tags: ["React.js", "Tailwind"],
+    imageUrl: clickchaser,
   },
 ];
 
