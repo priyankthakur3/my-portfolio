@@ -2,10 +2,18 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { StaticImageData } from "next/image";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
+type imageUrl = string;
+interface Project {
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: StaticImageData; // Assuming imageUrl is a string
+}
 export const links = [
   {
     name: "Home",
@@ -48,27 +56,25 @@ export const experiencesData = [
     description:
       "I worked as a data Engineer developer for 3 years in 1 job. I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
-      date: "Aug 2019 - Jan 2022",
+    date: "Aug 2019 - Jan 2022",
   },
   {
     title: "Junior Technical Associate",
     location: "Mumbai, India",
-    description:
-      " aslghdsloghsdnhgpsind",
+    description: " aslghdsloghsdnhgpsind",
     icon: React.createElement(FaReact),
     date: "Aug 2018 - Jul 2019",
-    },
+  },
   {
     title: "Bachelor's In Computer Engineering",
     location: "Mumbai, India",
-    description:
-      ".",
+    description: ".",
     icon: React.createElement(LuGraduationCap),
     date: "Aug 2014 - May 2018",
-  }
+  },
 ] as const;
 
-export const projectsData = [
+export const projectsData: Project[] = [
   {
     title: "CorpComment",
     description:
@@ -90,7 +96,7 @@ export const projectsData = [
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
   },
-] as const;
+];
 
 export const skillsData = [
   "HTML",
