@@ -1,28 +1,20 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import SectionHeader from "./SectionHeader";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useActiveSessionContext } from "@/context/ActiveSession";
-export default function About() {
-  const { ref, inView } = useInView({
-    threshold: 0.75,
-  });
-  const { setActiveSession, timeOfLastClick } = useActiveSessionContext();
 
-  useEffect(() => {
-    if (inView && Date.now() - timeOfLastClick > 1000) {
-      setActiveSession("About");
-    }
-  }, [inView, setActiveSession, timeOfLastClick]);
+import { useSectionInView } from "@/lib/hooks";
+export default function About() {
+  const { ref } = useSectionInView("About");
+
   return (
     <motion.section
       ref={ref}
+      id="about"
       className="mb-20 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-[100rem]"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.125 }}
-      id="about"
     >
       <SectionHeader>About Me</SectionHeader>
       <p className="mb-3">

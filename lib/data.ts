@@ -1,19 +1,28 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import { StaticImageData } from "next/image";
+import { PiFileSqlDuotone } from "react-icons/pi";
+import { FaHtml5, FaJava, FaGit, FaCss3Alt, FaNodeJs } from "react-icons/fa";
+import {
+  SiTypescript,
+  SiJavascript,
+  SiTeradata,
+  SiMongodb,
+  SiPostgresql,
+  SiPython,
+  SiReact,
+  SiNextdotjs,
+  SiExpress,
+  SiTailwindcss,
+  SiDjango,
+  SiFastapi,
+} from "react-icons/si";
+
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import clickchaser from "@/public/clickchaser.png";
+import { Project, ExperienceType, SkillsType } from "./types";
 
-type imageUrl = string;
-interface Project {
-  title: string;
-  description: string;
-  tags: string[];
-  imageUrl: StaticImageData; // Assuming imageUrl is a string
-}
 export const links = [
   {
     name: "Home",
@@ -45,17 +54,19 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+export const experiencesData: ExperienceType[] = [
   {
-    title: "Master's In Computer Engineering",
+    title: "Master of Engineering, Computer Engineering",
+    organisation: "Stevens Institute of Technology",
     location: "Hoboken, NJ",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated after 6 adgsdfgsfdgsdgsdgsdgdsgdsgmonths of studying. I immediately found a job as a front-end developer.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Jan 2022 - Dec 2023",
   },
   {
     title: "Data Engineer",
+    organisation: "Teradata Corporation",
     location: "Mumbai, India",
     description:
       "I worked as a data Engineer developer for 3 years in 1 job. I also upskilled to the full stack.",
@@ -64,13 +75,15 @@ export const experiencesData = [
   },
   {
     title: "Junior Technical Associate",
+    organisation: "Teradata Corporation",
     location: "Mumbai, India",
     description: " aslghdsloghsdnhgpsind",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: "Aug 2018 - Jul 2019",
   },
   {
-    title: "Bachelor's In Computer Engineering",
+    title: "Bachelor of Engineering, Computer Engineering",
+    organisation: "University of Mumbai",
     location: "Mumbai, India",
     description: ".",
     icon: React.createElement(LuGraduationCap),
@@ -79,20 +92,20 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData: Project[] = [
-  // {
-  //   title: "CorpComment",
-  //   description:
-  //     "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-  //   tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-  //   imageUrl: corpcommentImg,
-  // },
-  // {
-  //   title: "rmtDev",
-  //   description:
-  //     "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-  //   tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-  //   imageUrl: rmtdevImg,
-  // },
+  {
+    title: "CorpComment",
+    description:
+      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    imageUrl: corpcommentImg,
+  },
+  {
+    title: "rmtDev",
+    description:
+      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    imageUrl: rmtdevImg,
+  },
   {
     title: "Click Chaser",
     description: "A public web app for Counting clicks.",
@@ -101,24 +114,23 @@ export const projectsData: Project[] = [
   },
 ];
 
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Teradata Database",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+export const skillsData: SkillsType[] = [
+  { title: "Python", icon: SiPython },
+  { title: "Java", icon: FaJava },
+  { title: "SQL", icon: PiFileSqlDuotone },
+  { title: "JavaScript", icon: SiJavascript },
+  { title: "TypeScript", icon: SiTypescript },
+  { title: "Teradata Database", icon: SiTeradata },
+  { title: "MongoDB", icon: SiMongodb },
+  { title: "PostgreSQL", icon: SiPostgresql },
+  { title: "HTML", icon: FaHtml5 },
+  { title: "CSS", icon: FaCss3Alt },
+  { title: "React", icon: SiReact },
+  { title: "Next.js", icon: SiNextdotjs },
+  { title: "Node.js", icon: FaNodeJs },
+  { title: "Express.js", icon: SiExpress },
+  { title: "Git", icon: FaGit },
+  { title: "Tailwind", icon: SiTailwindcss },
+  { title: "Django", icon: SiDjango },
+  { title: "FastAPI", icon: SiFastapi },
 ] as const;
