@@ -10,7 +10,7 @@ import { useSectionInView } from "@/lib/hooks";
 export default function Intro() {
   const { ref } = useSectionInView("Home");
   return (
-    <section ref={ref} className="mb-15 max-w-[50rem]">
+    <section ref={ref} id="home" className="mb-15 max-w-[50rem]">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
