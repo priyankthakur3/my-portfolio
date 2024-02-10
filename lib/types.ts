@@ -25,7 +25,7 @@ export type ExperienceType = {
   title: String;
   organisation: String;
   location: String;
-  description: String;
+  description: Array<string>;
   icon: React.FunctionComponentElement<IconBaseProps>;
   date: string;
   type: "edu" | "work";
