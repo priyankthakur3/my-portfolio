@@ -22,7 +22,7 @@ export default function About() {
         <p className="mb-3">
           Driven and results-oriented{" "}
           <span className="font-medium">Software Engineer</span> with a passion
-          for leveraging technology to solve complex problems. With a Master\'
+          for leveraging technology to solve complex problems. With a Master\'s
           degree in Computer Engineering from Stevens Institute of Technology
           and over three years of professional experience at Teradata
           Corporation, I have honed my skills in database administration,
