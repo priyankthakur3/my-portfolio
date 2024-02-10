@@ -63,6 +63,7 @@ export const experiencesData: ExperienceType[] = [
       "I graduated after 6 adgsdfgsfdgsdgsdgsdgdsgdsgmonths of studying. I immediately found a job as a front-end developer.",
     icon: React.createElement(LuGraduationCap),
     date: "Jan 2022 - Dec 2023",
+    type: "edu",
   },
   {
     title: "Data Engineer",
@@ -72,6 +73,7 @@ export const experiencesData: ExperienceType[] = [
       "I worked as a data Engineer developer for 3 years in 1 job. I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
     date: "Aug 2019 - Jan 2022",
+    type: "work",
   },
   {
     title: "Junior Technical Associate",
@@ -80,6 +82,7 @@ export const experiencesData: ExperienceType[] = [
     description: " aslghdsloghsdnhgpsind",
     icon: React.createElement(CgWorkAlt),
     date: "Aug 2018 - Jul 2019",
+    type: "work",
   },
   {
     title: "Bachelor of Engineering, Computer Engineering",
@@ -88,6 +91,7 @@ export const experiencesData: ExperienceType[] = [
     description: ".",
     icon: React.createElement(LuGraduationCap),
     date: "Aug 2014 - May 2018",
+    type: "edu",
   },
 ] as const;
 

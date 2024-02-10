@@ -28,6 +28,7 @@ export type ExperienceType = {
   description: String;
   icon: React.FunctionComponentElement<IconBaseProps>;
   date: string;
+  type: "edu" | "work";
 };
 
 export type SkillsType = {

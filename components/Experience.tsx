@@ -22,6 +22,7 @@ export default function Experience() {
               visible={true}
               icon={item.icon}
               date={item.date}
+              position={item.type === "work" ? "left" : "right"}
               contentStyle={{
                 background: "#f3f4f6",
                 boxShadow: "none",
