@@ -1,11 +1,27 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { PiFileSqlDuotone } from "react-icons/pi";
+import { FaHtml5, FaJava, FaGit, FaCss3Alt, FaNodeJs } from "react-icons/fa";
+import {
+  SiTypescript,
+  SiJavascript,
+  SiTeradata,
+  SiMongodb,
+  SiPostgresql,
+  SiPython,
+  SiReact,
+  SiNextdotjs,
+  SiExpress,
+  SiTailwindcss,
+  SiDjango,
+  SiFastapi,
+} from "react-icons/si";
+
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import clickchaser from "@/public/clickchaser.png";
-import { Project } from "./types";
+import { Project, ExperienceType, SkillsType } from "./types";
 
 export const links = [
   {
@@ -38,17 +54,19 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+export const experiencesData: ExperienceType[] = [
   {
-    title: "Master's In Computer Engineering",
+    title: "Master of Engineering, Computer Engineering",
+    organisation: "Stevens Institute of Technology",
     location: "Hoboken, NJ",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated after 6 adgsdfgsfdgsdgsdgsdgdsgdsgmonths of studying. I immediately found a job as a front-end developer.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Jan 2022 - Dec 2023",
   },
   {
     title: "Data Engineer",
+    organisation: "Teradata Corporation",
     location: "Mumbai, India",
     description:
       "I worked as a data Engineer developer for 3 years in 1 job. I also upskilled to the full stack.",
@@ -57,13 +75,15 @@ export const experiencesData = [
   },
   {
     title: "Junior Technical Associate",
+    organisation: "Teradata Corporation",
     location: "Mumbai, India",
     description: " aslghdsloghsdnhgpsind",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: "Aug 2018 - Jul 2019",
   },
   {
-    title: "Bachelor's In Computer Engineering",
+    title: "Bachelor of Engineering, Computer Engineering",
+    organisation: "University of Mumbai",
     location: "Mumbai, India",
     description: ".",
     icon: React.createElement(LuGraduationCap),
@@ -94,24 +114,23 @@ export const projectsData: Project[] = [
   },
 ];
 
-export const skillsData = [
-  "Python",
-  "Java",
-  "SQL",
-  "JavaScript",
-  "TypeScript",
-  "Teradata Database",
-  "MongoDB",
-  "PostgresSQL",
-  "HTML",
-  "CSS",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Express.js",
-  "Apollo",
-  "Git",
-  "Tailwind",
-  "Django",
-  "FastAPI",
+export const skillsData: SkillsType[] = [
+  { title: "Python", icon: SiPython },
+  { title: "Java", icon: FaJava },
+  { title: "SQL", icon: PiFileSqlDuotone },
+  { title: "JavaScript", icon: SiJavascript },
+  { title: "TypeScript", icon: SiTypescript },
+  { title: "Teradata Database", icon: SiTeradata },
+  { title: "MongoDB", icon: SiMongodb },
+  { title: "PostgreSQL", icon: SiPostgresql },
+  { title: "HTML", icon: FaHtml5 },
+  { title: "CSS", icon: FaCss3Alt },
+  { title: "React", icon: SiReact },
+  { title: "Next.js", icon: SiNextdotjs },
+  { title: "Node.js", icon: FaNodeJs },
+  { title: "Express.js", icon: SiExpress },
+  { title: "Git", icon: FaGit },
+  { title: "Tailwind", icon: SiTailwindcss },
+  { title: "Django", icon: SiDjango },
+  { title: "FastAPI", icon: SiFastapi },
 ] as const;

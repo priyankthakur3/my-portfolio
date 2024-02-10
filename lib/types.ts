@@ -1,5 +1,6 @@
 import { StaticImageData } from "next/image";
 import { links } from "./data";
+import { IconBaseProps, IconType } from "react-icons";
 
 export type Project = {
   title: string;
@@ -18,4 +19,18 @@ export type ActiveSectionContextProps = {
   setActiveSession: React.Dispatch<React.SetStateAction<SectionName>>;
   timeOfLastClick: number;
   setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
+};
+
+export type ExperienceType = {
+  title: String;
+  organisation: String;
+  location: String;
+  description: String;
+  icon: React.FunctionComponentElement<IconBaseProps>;
+  date: string;
+};
+
+export type SkillsType = {
+  title: string;
+  icon: IconType;
 };
