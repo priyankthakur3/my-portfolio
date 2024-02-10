@@ -30,7 +30,7 @@ export const links = [
   },
   {
     name: "About",
-    hash: "#about",
+    hash: "#aboutme",
   },
   {
     name: "Stats",
@@ -59,35 +59,48 @@ export const experiencesData: ExperienceType[] = [
     title: "Master of Engineering, Computer Engineering",
     organisation: "Stevens Institute of Technology",
     location: "Hoboken, NJ",
-    description:
-      "I graduated after 6 adgsdfgsfdgsdgsdgsdgdsgdsgmonths of studying. I immediately found a job as a front-end developer.",
+    description: [
+      "I graduated with GPA: 3.75",
+      "I took Courses Web Programing, Data Acquistion modeling & Analysis, Engineering Python, Internet of Things",
+    ],
     icon: React.createElement(LuGraduationCap),
     date: "Jan 2022 - Dec 2023",
+    type: "edu",
   },
   {
     title: "Data Engineer",
     organisation: "Teradata Corporation",
     location: "Mumbai, India",
-    description:
-      "I worked as a data Engineer developer for 3 years in 1 job. I also upskilled to the full stack.",
+    description: [
+      "I worked as a Data Engineer wherein I was responsible to build/maintain ETL pipelines, Conduct Code Reviews & implemented Data Quality Rules",
+      "I also Led team of 4 member, built & maintained SOPs for addressing common & new Data Issues",
+    ],
     icon: React.createElement(CgWorkAlt),
     date: "Aug 2019 - Jan 2022",
+    type: "work",
   },
   {
     title: "Junior Technical Associate",
     organisation: "Teradata Corporation",
     location: "Mumbai, India",
-    description: " aslghdsloghsdnhgpsind",
+    description: [
+      "My Primary responsibilites was optimizing Database Performance through SQL Tuning & Automating manual reporting generation task",
+      "I also built performance Monitoring Dashboards & SQL Procedures for access control to comply with Data Goverance Policies",
+    ],
     icon: React.createElement(CgWorkAlt),
     date: "Aug 2018 - Jul 2019",
+    type: "work",
   },
   {
     title: "Bachelor of Engineering, Computer Engineering",
     organisation: "University of Mumbai",
     location: "Mumbai, India",
-    description: ".",
+    description: [
+      "From mathematics, physics, and then computer hardware knowledge, to C, data structure & algos, SQL, Java, Python, Agile Development, UI/UX design and web development, I learned a lot",
+    ],
     icon: React.createElement(LuGraduationCap),
     date: "Aug 2014 - May 2018",
+    type: "edu",
   },
 ] as const;
 
