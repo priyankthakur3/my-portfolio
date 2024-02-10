@@ -20,10 +20,11 @@ export default function Skills() {
     }),
   };
 
-  const { ref } = useSectionInView("Skills", 0.2);
+  const { ref } = useSectionInView("Skills", 0.7);
   return (
     <section
       ref={ref}
+      id="skills"
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center mt-10 sm:mb-40"
     >
       <SectionHeader>My Skills</SectionHeader>
@@ -31,14 +32,15 @@ export default function Skills() {
         {skillsData.map((skill, index) => (
           <motion.li
             key={index}
-            className="bg-white border border-black/[0.1] rounded-xl px-5 py-3"
+            className="bg-white border border-black/[0.1] rounded-xl px-5 py-3 flex flex-row items-center gap-[0.4rem]"
             variants={fadeInVariants}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             custom={index}
           >
-            {skill}
+            <skill.icon className="pt-1 text-lg h-6" />
+            {skill.title}
           </motion.li>
         ))}
       </ul>
