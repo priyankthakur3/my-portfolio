@@ -20,12 +20,12 @@ export default function About() {
       <p className="mb-3">
         Driven and results-oriented{" "}
         <span className="font-medium">Software Engineer</span> with a passion
-        for leveraging technology to solve complex problems. With a Master\'s
-        degree in Computer Engineering from Stevens Institute of Technology and
-        over three years of professional experience at Teradata Corporation, I
-        have honed my skills in database administration, software engineering,
-        and data analysis. My experience includes optimizing ETL pipelines,
-        leading teams. I am Proficient in{" "}
+        for leveraging technology to solve complex problems. With a
+        Master&apos;s degree in Computer Engineering from Stevens Institute of
+        Technology and over three years of professional experience at Teradata
+        Corporation, I have honed my skills in database administration, software
+        engineering, and data analysis. My experience includes optimizing ETL
+        pipelines, leading teams. I am Proficient in{" "}
         <span className="underline">Python, JavaScript, SQL, </span> and
         frameworks such as{" "}
         <span className="underline"> Spring Boot, Express.js and Django</span> I
