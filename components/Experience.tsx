@@ -44,7 +44,7 @@ export default function Experience() {
               <p className="!font-normal !mt-0">{item.location}</p>
               <div className="!mt-1 !font-normal text-gray-700 text-justify flex flex-col">
                 {item.description.map((desc, index) => (
-                  <span key={index}>{desc}</span>
+                  <p key={index}>{desc}</p>
                 ))}
               </div>
             </VerticalTimelineElement>
