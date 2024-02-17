@@ -6,9 +6,12 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin, BsGithub } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSessionContext } from "@/context/ActiveSession";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home");
+  const { activeSession, setActiveSession, setTimeOfLastClick } =
+    useActiveSessionContext();
   return (
     <section ref={ref} id="home" className="mb-15 max-w-[50rem]">
       <div className="flex items-center justify-center">
@@ -76,6 +79,10 @@ export default function Intro() {
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 
             rounded outline-none focus:scale-110 hover:scale-110 
             hover:bg-gray-950 active:scale-105 transition-all cursor-pointer"
+          onClick={() => {
+            setActiveSession("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me
           <BsArrowRight className="group-hover:translate-x-1 opacity-95 transition" />
@@ -84,7 +91,7 @@ export default function Intro() {
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded 
             focus:scale-110 hover:scale-110 hover:bg-slate-300 active:scale-105 transition-all cursor-pointer
-            border border-black/10"
+            borderBlack"
           href="/CV.pdf"
           target="_blank"
           download={true}
@@ -95,7 +102,7 @@ export default function Intro() {
 
         <a
           className="bg-white px-7 py-3 flex items-center gap-2 rounded 
-            text-[1.35rem] focus:scale-110 hover:scale-110 hover:bg-slate-300 active:scale-105 transition-all border border-black/10"
+            text-[1.35rem] focus:scale-110 hover:scale-110 hover:bg-slate-300 active:scale-105 transition-all borderBlack"
           href="https://linkedin.com/in/priyankthakur3"
           target="_blank"
         >
@@ -104,7 +111,7 @@ export default function Intro() {
 
         <a
           className="bg-white px-7 py-3 flex items-center gap-2 rounded text-lg text-[1.35rem] 
-            focus:scale-110 hover:scale-110 hover:bg-slate-300 active:scale-105 transition-all border border-black/10"
+            focus:scale-110 hover:scale-110 hover:bg-slate-300 active:scale-105 transition-all borderBlack"
           href="https://github.com/priyankthakur3"
           target="_blank"
         >
