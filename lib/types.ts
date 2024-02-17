@@ -19,6 +19,8 @@ export type ActiveSectionContextProps = {
   setActiveSession: React.Dispatch<React.SetStateAction<SectionName>>;
   timeOfLastClick: number;
   setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
+  currentTheme: string;
+  setActiveTheme: React.Dispatch<React.SetStateAction<string>>;
 };
 
 export type ExperienceType = {
