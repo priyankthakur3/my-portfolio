@@ -14,7 +14,7 @@ export default function ActiveSectionProvider({
 }: ActiveSectionProviderProps) {
   const [activeSession, setActiveSession] = useState<SectionName>("Home");
   const [timeOfLastClick, setTimeOfLastClick] = useState<number>(0);
-
+  const [currentTheme, setActiveTheme] = useState<string>("Light");
   return (
     <ActiveSectionContext.Provider
       value={{
@@ -22,6 +22,8 @@ export default function ActiveSectionProvider({
         setActiveSession,
         timeOfLastClick,
         setTimeOfLastClick,
+        currentTheme,
+        setActiveTheme,
       }}
     >
       {children}

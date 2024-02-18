@@ -23,7 +23,7 @@ export default function ContactMe() {
       viewport={{ once: true }}
     >
       <SectionHeader>Contact Me</SectionHeader>
-      <p className="text-gray-400">
+      <p className="text-gray-400 dark:text-white/80">
         Please contact me directly at{" "}
         <a href="mailto:priyankthakur3@gmail.com" className="underline">
           priyankthakur3@gmail.com
@@ -31,7 +31,7 @@ export default function ContactMe() {
         &nbsp;or through this form
       </p>
       <form
-        className="mt-[2rem] flex flex-col"
+        className="mt-[2rem] flex flex-col dark:text-black/80"
         action={async (formData) => {
           const t = await sendEmail(formData);
           const { data, error } = t;

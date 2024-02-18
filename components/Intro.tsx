@@ -91,7 +91,7 @@ export default function Intro() {
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded 
             focus:scale-110 hover:scale-110 hover:bg-slate-300 active:scale-105 transition-all cursor-pointer
-            borderBlack"
+            borderBlack dark:bg-white/10"
           href="/CV.pdf"
           target="_blank"
           download={true}
@@ -102,7 +102,7 @@ export default function Intro() {
 
         <a
           className="bg-white px-7 py-3 flex items-center gap-2 rounded 
-            text-[1.35rem] focus:scale-110 hover:scale-110 hover:bg-slate-300 active:scale-105 transition-all borderBlack"
+            text-[1.8rem] focus:scale-110 hover:scale-110 hover:bg-slate-300 active:scale-105 transition-all borderBlack dark:bg-white/10 dark:text-white/50"
           href="https://linkedin.com/in/priyankthakur3"
           target="_blank"
         >
@@ -110,8 +110,8 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white px-7 py-3 flex items-center gap-2 rounded text-lg text-[1.35rem] 
-            focus:scale-110 hover:scale-110 hover:bg-slate-300 active:scale-105 transition-all borderBlack"
+          className="bg-white px-7 py-3 flex items-center gap-2 rounded text-lg text-[1.8rem] 
+            focus:scale-110 hover:scale-110 hover:bg-slate-300 active:scale-105 transition-all borderBlack dark:bg-white/10 dark:text-white/50"
           href="https://github.com/priyankthakur3"
           target="_blank"
         >
