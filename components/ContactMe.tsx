@@ -5,18 +5,16 @@ import SectionHeader from "./SectionHeader";
 import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmail";
 import Toast from "./Toast";
-import { useFormStatus } from "react-dom";
 import SubmitBtn from "./SubmitBtn";
 import toast from "react-hot-toast";
 
 export default function ContactMe() {
   const { ref } = useSectionInView("Contact");
-  const [loading, setLoadingState] = useState(false);
   return (
     <motion.section
       ref={ref}
       id="contact"
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center scroll-mt-28"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -31,7 +29,7 @@ export default function ContactMe() {
         &nbsp;or through this form
       </p>
       <form
-        className="mt-[2rem] flex flex-col dark:text-black/80"
+        className="mt-[2rem] flex flex-col dark:text-black/80 justify-center"
         action={async (formData) => {
           const t = await sendEmail(formData);
           const { data, error } = t;

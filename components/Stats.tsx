@@ -26,33 +26,39 @@ export default function Stats() {
         }}
         ref={ref2}
       >
-        <Image
-          src={
-            "https://github-readme-personal.vercel.app/api/top-langs?username=Priyankthakur3&show_icons=true&locale=en&layout=compact&theme=radical&hide_progress=true"
-          }
-          alt="Most Used Languages Github"
-          width={400}
-          height={400}
-          quality={95}
-        />
-        <Image
-          src={
-            "https://leetcard.jacoblin.cool/priyankthakur3?theme=dark&font=Ubuntu"
-          }
-          alt="LeetCode stats"
-          width={400}
-          height={400}
-          quality={95}
-        />
-        <Image
-          src={
-            "https://github-readme-personal.vercel.app/api?username=PriyankThakur3&show_icons=true&theme=radical"
-          }
-          alt="Github stats"
-          width={400}
-          height={400}
-          quality={95}
-        />
+        <div>
+          <Image
+            src={
+              "https://github-readme-personal.vercel.app/api/top-langs?username=Priyankthakur3&show_icons=true&locale=en&layout=compact&theme=radical&hide_progress=true"
+            }
+            alt="Most Used Languages Github"
+            width={400}
+            height={400}
+            quality={95}
+          />
+        </div>
+        <div>
+          <Image
+            src={
+              "https://leetcard.jacoblin.cool/priyankthakur3?theme=dark&font=Ubuntu"
+            }
+            alt="LeetCode stats"
+            width={400}
+            height={400}
+            quality={95}
+          />
+        </div>
+        <div>
+          <Image
+            src={
+              "https://github-readme-personal.vercel.app/api?username=PriyankThakur3&show_icons=true&theme=radical"
+            }
+            alt="Github stats"
+            width={400}
+            height={400}
+            quality={95}
+          />
+        </div>
       </motion.div>
     </section>
   );
