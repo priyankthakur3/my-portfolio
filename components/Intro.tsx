@@ -13,7 +13,7 @@ export default function Intro() {
   const { activeSession, setActiveSession, setTimeOfLastClick } =
     useActiveSessionContext();
   return (
-    <section ref={ref} id="home" className="mb-15 max-w-[50rem]">
+    <section ref={ref} id="home" className="mb-15 max-w-[50rem] scroll-mt-28">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -99,24 +99,25 @@ export default function Intro() {
           Download CV
           <HiDownload className="group-hover:translate-x-1 opacity-95 transition" />
         </a>
-
-        <a
-          className="bg-white px-7 py-3 flex items-center gap-2 rounded 
+        <div className="flex gap-4">
+          <a
+            className="bg-white px-7 py-3 flex items-center gap-2 rounded 
             text-[1.8rem] focus:scale-110 hover:scale-110 hover:bg-slate-300 active:scale-105 transition-all borderBlack dark:bg-white/10 dark:text-white/50"
-          href="https://linkedin.com/in/priyankthakur3"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
+            href="https://linkedin.com/in/priyankthakur3"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
 
-        <a
-          className="bg-white px-7 py-3 flex items-center gap-2 rounded text-lg text-[1.8rem] 
-            focus:scale-110 hover:scale-110 hover:bg-slate-300 active:scale-105 transition-all borderBlack dark:bg-white/10 dark:text-white/50"
-          href="https://github.com/priyankthakur3"
-          target="_blank"
-        >
-          <BsGithub />
-        </a>
+          <a
+            className="bg-white px-7 py-3 flex items-center gap-2 rounded 
+            text-[1.8rem] focus:scale-110 hover:scale-110 hover:bg-slate-300 active:scale-105 transition-all borderBlack dark:bg-white/10 dark:text-white/50"
+            href="https://github.com/priyankthakur3"
+            target="_blank"
+          >
+            <BsGithub />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
