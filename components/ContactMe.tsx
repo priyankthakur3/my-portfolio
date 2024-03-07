@@ -1,6 +1,6 @@
 "use client";
 import { useSectionInView } from "@/lib/hooks";
-import React, { useState } from "react";
+import React from "react";
 import SectionHeader from "./SectionHeader";
 import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmail";
@@ -14,7 +14,7 @@ export default function ContactMe() {
     <motion.section
       ref={ref}
       id="contact"
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center scroll-mt-28"
+      className="px-2 mb-20 sm:mb-28 w-[min(100%,38rem)] text-center scroll-mt-28"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}

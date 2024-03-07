@@ -56,6 +56,28 @@ export const links = [
 
 export const experiencesData: ExperienceType[] = [
   {
+    title: "Software Engineer Intern",
+    organisation: "JerseySTEM",
+    location: "Florham Park, NJ",
+    description: [
+      "Currently I am working as a Intern Leading development of API endpoints using Google App Scripts, OAuth to integrate Salesforce & Chrome Extensions",
+    ],
+    icon: React.createElement(CgWorkAlt),
+    date: "Feb 2023 - Present",
+    type: "work",
+  },
+  {
+    title: "Graduate Student Assistant - Food Prepartion",
+    organisation: "Stevens Institute of Technology",
+    location: "Hoboken, NJ",
+    description: [
+      "I worked as a Graduate Student Assistant in Multilingual Kitchen, leveraging strong communication & time management skills balancing work and Student Life",
+    ],
+    icon: React.createElement(CgWorkAlt),
+    date: "Sept 2023 - Dec 2023",
+    type: "work",
+  },
+  {
     title: "Master of Engineering, Computer Engineering",
     organisation: "Stevens Institute of Technology",
     location: "Hoboken, NJ",
