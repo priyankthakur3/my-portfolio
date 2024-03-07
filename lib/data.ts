@@ -63,7 +63,7 @@ export const experiencesData: ExperienceType[] = [
       "Currently I am working as a Intern Leading development of API endpoints using Google App Scripts, OAuth to integrate Salesforce & Chrome Extensions",
     ],
     icon: React.createElement(CgWorkAlt),
-    date: "Feb 2023 - Present",
+    date: "Feb 2024 - Present",
     type: "work",
   },
   {
