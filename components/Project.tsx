@@ -53,7 +53,8 @@ export default function Project({
             src={imageUrl}
             alt="Project I worked on"
             quality={95}
-            className="absolute top-8 -right-40 w-[28.30rem] rounded-t-lg shadow-2xl
+            className="
+          invisible absolute top-8 -right-40 w-[28.30rem] rounded-t-lg shadow-2xl
           transition  
           group-hover:scale-[1.04]
           group-hover:-translate-x-3
@@ -63,7 +64,8 @@ export default function Project({
           group-even:-left-40 group-even:right-[initial]
           group-even:group-hover:translate-x-3
           group-even:group-hover:translate-y-3
-          group-even:group-hover:rotate-2"
+          group-even:group-hover:rotate-2
+          sm:visible"
           />
         </div>
       </section>
