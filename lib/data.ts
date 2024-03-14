@@ -21,6 +21,7 @@ import {
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import clickchaser from "@/public/clickchaser.png";
+import campuscompass from "@/public/campuscompass.png";
 import { Project, ExperienceType, SkillsType } from "./types";
 
 export const links = [
@@ -127,20 +128,20 @@ export const experiencesData: ExperienceType[] = [
 ] as const;
 
 export const projectsData: Project[] = [
-  // {
-  //   title: "CorpComment",
-  //   description:
-  //     "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-  //   tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-  //   imageUrl: corpcommentImg,
-  // },
-  // {
-  //   title: "rmtDev",
-  //   description:
-  //     "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-  //   tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-  //   imageUrl: rmtdevImg,
-  // },
+  {
+    title: "Campus Compass",
+    description:
+      "An online site to help Stevens Students notify their current lectures and display all events occuring on campus",
+    tags: [
+      "Express.js",
+      "Leaflet.js",
+      "jQuery",
+      "MongoDB",
+      "Handlebars",
+      "turf.js",
+    ],
+    imageUrl: campuscompass,
+  },
   {
     title: "Click Chaser",
     description: "A public web app for Counting clicks.",
@@ -168,4 +169,22 @@ export const skillsData: SkillsType[] = [
   { title: "Tailwind", icon: SiTailwindcss },
   { title: "Django", icon: SiDjango },
   { title: "FastAPI", icon: SiFastapi },
+] as const;
+
+export const statsData = [
+  {
+    name: "LeetCode Solved Questions",
+    img_link:
+      "https://leetcard.jacoblin.cool/priyankthakur3?theme=dark&font=Ubuntu",
+  },
+  {
+    name: "GitHub Stats: My Top Languages",
+    img_link:
+      "https://github-readme-personal.vercel.app/api/top-langs?username=Priyankthakur3&show_icons=true&locale=en&layout=compact&theme=radical&hide_progress=true",
+  },
+  {
+    name: "GitHub Stats: My Account Stats",
+    img_link:
+      "https://github-readme-personal.vercel.app/api?username=PriyankThakur3&show_icons=true&theme=radical",
+  },
 ] as const;
