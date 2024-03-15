@@ -3,6 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import { PiFileSqlDuotone } from "react-icons/pi";
 import { FaHtml5, FaJava, FaGit, FaCss3Alt, FaNodeJs } from "react-icons/fa";
+
 import {
   SiTypescript,
   SiJavascript,
@@ -16,6 +17,9 @@ import {
   SiTailwindcss,
   SiDjango,
   SiFastapi,
+  SiJquery,
+  SiApacheairflow,
+  SiApachespark,
 } from "react-icons/si";
 
 import corpcommentImg from "@/public/corpcomment.png";
@@ -156,7 +160,7 @@ export const skillsData: SkillsType[] = [
   { title: "SQL", icon: PiFileSqlDuotone },
   { title: "JavaScript", icon: SiJavascript },
   { title: "TypeScript", icon: SiTypescript },
-  { title: "Teradata Database", icon: SiTeradata },
+  { title: "Teradata", icon: SiTeradata },
   { title: "MongoDB", icon: SiMongodb },
   { title: "PostgreSQL", icon: SiPostgresql },
   { title: "HTML", icon: FaHtml5 },
@@ -169,6 +173,9 @@ export const skillsData: SkillsType[] = [
   { title: "Tailwind", icon: SiTailwindcss },
   { title: "Django", icon: SiDjango },
   { title: "FastAPI", icon: SiFastapi },
+  { title: "jQuery", icon: SiJquery },
+  { title: "Apache Spark", icon: SiApachespark },
+  { title: "Apache Airflow", icon: SiApacheairflow },
 ] as const;
 
 export const statsData = [

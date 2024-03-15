@@ -36,7 +36,7 @@ export default function Stat({ name, img_link }: StatProps) {
           height={400}
           quality={95}
         />
-        <h3 className="text-2xl px-6 py-4 font-semibold">{name}</h3>
+        <h3 className="text-xl px-6 py-4 font-semibold">{name}</h3>
       </section>
     </motion.div>
   );
