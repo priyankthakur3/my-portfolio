@@ -181,8 +181,7 @@ export const skillsData: SkillsType[] = [
 export const statsData = [
   {
     name: "LeetCode Solved Questions",
-    img_link:
-      "https://leetcard.jacoblin.cool/priyankthakur3?theme=dark&font=Ubuntu",
+    img_link: "https://leetcard.jacoblin.cool/pthakur2?theme=dark&font=Ubuntu",
   },
   {
     name: "GitHub Stats: My Top Languages",
