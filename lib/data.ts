@@ -7,6 +7,7 @@ import { FaHtml5, FaJava, FaGit, FaCss3Alt, FaNodeJs } from "react-icons/fa";
 import {
   SiTypescript,
   SiJavascript,
+  SiAlteryx,
   SiTeradata,
   SiMongodb,
   SiPostgresql,
@@ -17,13 +18,13 @@ import {
   SiTailwindcss,
   SiDjango,
   SiFastapi,
+  SiTableau,
+  SiPowerbi,
   SiJquery,
   SiApacheairflow,
   SiApachespark,
 } from "react-icons/si";
 
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
 import clickchaser from "@/public/clickchaser.png";
 import campuscompass from "@/public/campuscompass.png";
 import { Project, ExperienceType, SkillsType } from "./types";
@@ -61,11 +62,11 @@ export const links = [
 
 export const experiencesData: ExperienceType[] = [
   {
-    title: "Software Engineer Intern",
+    title: "Data Engineer",
     organisation: "JerseySTEM",
     location: "Florham Park, NJ",
     description: [
-      "Currently I am working as a Intern Leading development of API endpoints using Google App Scripts, OAuth to integrate Salesforce & Chrome Extensions",
+      "Currently I am working as a Data Engineer, And I am building ETL Data Pipeline to migrate data from Salesforce and iCIMS data into MySQL.",
     ],
     icon: React.createElement(CgWorkAlt),
     date: "Feb 2024 - Present",
@@ -163,6 +164,11 @@ export const skillsData: SkillsType[] = [
   { title: "Teradata", icon: SiTeradata },
   { title: "MongoDB", icon: SiMongodb },
   { title: "PostgreSQL", icon: SiPostgresql },
+  { title: "Apache Spark", icon: SiApachespark },
+  { title: "Apache Airflow", icon: SiApacheairflow },
+  { title: "Alteryx", icon: SiAlteryx },
+  { title: "Tableau", icon: SiTableau },
+  { title: "PowerBI", icon: SiPowerbi },
   { title: "HTML", icon: FaHtml5 },
   { title: "CSS", icon: FaCss3Alt },
   { title: "React", icon: SiReact },
@@ -174,23 +180,22 @@ export const skillsData: SkillsType[] = [
   { title: "Django", icon: SiDjango },
   { title: "FastAPI", icon: SiFastapi },
   { title: "jQuery", icon: SiJquery },
-  { title: "Apache Spark", icon: SiApachespark },
-  { title: "Apache Airflow", icon: SiApacheairflow },
 ] as const;
 
 export const statsData = [
   {
     name: "LeetCode Solved Questions",
-    img_link: "https://leetcard.jacoblin.cool/pthakur2?theme=dark&font=Ubuntu",
+    img_link:
+      "https://leetcard.jacoblin.cool/pthakur2?theme=dark&font=Ubuntu&ext=activity",
   },
   {
     name: "GitHub Stats: My Top Languages",
     img_link:
-      "https://github-readme-personal.vercel.app/api/top-langs?username=Priyankthakur3&show_icons=true&locale=en&layout=compact&theme=radical&hide_progress=true",
+      "https://github-readme-stats.vercel.app/api/top-langs?username=Priyankthakur3&show_icons=true&locale=en&layout=compact&theme=radical&hide_progress=true",
   },
   {
     name: "GitHub Stats: My Account Stats",
     img_link:
-      "https://github-readme-personal.vercel.app/api?username=PriyankThakur3&show_icons=true&theme=radical",
+      "https://github-readme-stats.vercel.app/api?username=PriyankThakur3&show_icons=true&theme=radical",
   },
 ] as const;

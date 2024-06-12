@@ -8,7 +8,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "github-readme-personal.vercel.app",
+        hostname: "github-readme-stats.vercel.app",
       },
       {
         protocol: "https",
