@@ -33,19 +33,6 @@ export default function Intro() {
               priority={true}
               className="h-30 w-30 rounded-full border-[0.35rem] border-white object-cover shadow-xl shadow-yellow-500/90 dark:shadow-yellow-700/90"
             />
-            {/* <motion.span
-              className="absolute bottom-0 right-0 text-4xl"
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                type: "spring",
-                stiffness: 125,
-                delay: 0.1,
-                duration: 0.7,
-              }}
-            >
-              👋
-            </motion.span> */}
           </motion.div>
         </div>
       </div>
@@ -60,9 +47,10 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I am Priyank</span>
         <span>
-          , Software Developer with 3 years of experience in Data Engineering. I
-          enjoy building <span className="italic">sites & apps</span> and binge
-          watch Mystery, Sci-fi genre movies and TV Series. My Current focus is{" "}
+          , Software Developer with {new Date().getFullYear() - 2018 - 1.5}{" "}
+          years of experience in Data Engineering. I enjoy building{" "}
+          <span className="italic">sites & apps</span> and binge watch Mystery,
+          Sci-fi genre movies and TV Series. My Current focus is{" "}
           <span className="underline">React (Next.js), Spring Boot</span>
         </span>
       </motion.p>
@@ -92,7 +80,7 @@ export default function Intro() {
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded 
             focus:scale-110 hover:scale-110 hover:bg-slate-300 active:scale-105 transition-all cursor-pointer
             borderBlack dark:bg-white/10"
-          href="/CV.pdf"
+          href="https://drive.google.com/file/d/17TUArOe2b0fQP1agyyOm0Gv5wozoo0Aq/view?usp=sharing"
           target="_blank"
           download={true}
         >
