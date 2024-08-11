@@ -69,7 +69,18 @@ export const experiencesData: ExperienceType[] = [
       "Currently I am working as a Data Engineer, And I am building ETL Data Pipeline to migrate data from Salesforce and iCIMS data into MySQL.",
     ],
     icon: React.createElement(CgWorkAlt),
-    date: "Feb 2024 - Present",
+    date: "May 2024 - Present",
+    type: "work",
+  },
+  {
+    title: "Software Engineer",
+    organisation: "JerseySTEM",
+    location: "Florham Park, NJ",
+    description: [
+      "I am worked as a Software Engineer. My Primary responsibilities included deployment of new microservices api endpoint for data extraction from Salesforce.",
+    ],
+    icon: React.createElement(CgWorkAlt),
+    date: "Feb 2024 - May 2024",
     type: "work",
   },
   {
