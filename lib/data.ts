@@ -199,14 +199,14 @@ export const statsData = [
     img_link:
       "https://leetcard.jacoblin.cool/pthakur2?theme=dark&font=Ubuntu&ext=activity",
   },
-  {
-    name: "GitHub Stats: My Top Languages",
-    img_link:
-      "https://github-readme-stats.vercel.app/api/top-langs?username=Priyankthakur3&show_icons=true&locale=en&layout=compact&theme=radical&hide_progress=true",
-  },
-  {
-    name: "GitHub Stats: My Account Stats",
-    img_link:
-      "https://github-readme-stats.vercel.app/api?username=PriyankThakur3&show_icons=true&theme=radical",
-  },
+  // {
+  //   name: "GitHub Stats: My Top Languages",
+  //   img_link:
+  //     "https://github-readme-stats.vercel.app/api/top-langs?username=Priyankthakur3&show_icons=true&locale=en&layout=compact&theme=radical&hide_progress=true",
+  // },
+  // {
+  //   name: "GitHub Stats: My Account Stats",
+  //   img_link:
+  //     "https://github-readme-stats.vercel.app/api?username=PriyankThakur3&show_icons=true&theme=radical",
+  // },
 ] as const;
