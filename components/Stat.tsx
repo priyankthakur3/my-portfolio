@@ -33,6 +33,7 @@ export default function Stat({ name, img_link }: StatProps) {
           src={img_link}
           alt={name}
           layout="responsive"
+          loading="lazy"
           width={400}
           height={400}
           quality={95}
