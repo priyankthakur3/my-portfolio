@@ -34,6 +34,7 @@ export default function Stat({ name, img_link }: StatProps) {
           alt={name}
           layout="responsive"
           loading="lazy"
+          objectFit="contain"
           width={400}
           height={400}
           quality={95}
