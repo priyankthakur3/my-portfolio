@@ -1,6 +1,5 @@
 "use client";
 import React, { useRef } from "react";
-import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 type StatProps = {
   name: string;
@@ -32,11 +31,9 @@ export default function Stat({ name, img_link }: StatProps) {
           className="w-full"
           src={img_link}
           alt={name}
-          // loading="lazy"
-          // objectFit="contain"
+          loading="lazy"
           width={400}
           height={400}
-          // quality={95}
         />
         <h3 className="text-xl px-6 py-4 font-semibold">{name}</h3>
       </section>
