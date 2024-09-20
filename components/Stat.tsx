@@ -16,30 +16,30 @@ export default function Stat({ name, img_link }: StatProps) {
   const opactityProgress = useTransform(scrollYProgress, [0, 1], [0.4, 1]);
 
   return (
-    <div
-      // style={{
-      //   scale: scaleProgress,
-      //   opacity: opactityProgress,
-      // }}
-      // ref={ref}
+    <motion.div
+      style={{
+        scale: scaleProgress,
+        opacity: opactityProgress,
+      }}
+      ref={ref}
       className="group mb-1 sm:m-1 last:mb-0"
     >
       <section
         className="bg-white border border-black/5 relative rounded-lg
                     dark:text-white dark:bg-white/10"
       >
-        <Image
+        <img
           className="w-full"
           src={img_link}
           alt={name}
-          loading="lazy"
-          objectFit="contain"
+          // loading="lazy"
+          // objectFit="contain"
           width={400}
           height={400}
-          quality={95}
+          // quality={95}
         />
         <h3 className="text-xl px-6 py-4 font-semibold">{name}</h3>
       </section>
-    </div>
+    </motion.div>
   );
 }
