@@ -84,11 +84,11 @@ export const experiencesData: ExperienceType[] = [
     type: "work",
   },
   {
-    title: "Graduate Student Assistant - Food Prepartion",
+    title: "Graduate Student Assistant",
     organisation: "Stevens Institute of Technology",
     location: "Hoboken, NJ",
     description: [
-      "I worked as a Graduate Student Assistant in Multilingual Kitchen, leveraging strong communication & time management skills balancing work and Student Life",
+      "I worked as a Graduate Student Assistant at Stevens Institute of Technology",
     ],
     icon: React.createElement(CgWorkAlt),
     date: "Sept 2023 - Dec 2023",
@@ -112,7 +112,7 @@ export const experiencesData: ExperienceType[] = [
     location: "Mumbai, India",
     description: [
       "I worked as a Data Engineer wherein I was responsible to build/maintain ETL pipelines, Conduct Code Reviews & implemented Data Quality Rules",
-      "I also Led team of 4 member, built & maintained SOPs for addressing common & new Data Issues",
+      "Led team of 4 member, built & maintained SOPs for addressing common & new Data Issues",
     ],
     icon: React.createElement(CgWorkAlt),
     date: "Aug 2019 - Jan 2022",
@@ -123,8 +123,8 @@ export const experiencesData: ExperienceType[] = [
     organisation: "Teradata Corporation",
     location: "Mumbai, India",
     description: [
-      "My Primary responsibilites was optimizing Database Performance through SQL Tuning & Automating manual reporting generation task",
-      "I also built performance Monitoring Dashboards & SQL Procedures for access control to comply with Data Goverance Policies",
+      "My Primary responsibilites was optimizing Database Performance through SQL Doctor Program",
+      "I also worked on automating manual tasks and built performance Monitoring Dashboards. Along with this I Developed SQL Procedures for access control to enforce Data Goverance Policies",
     ],
     icon: React.createElement(CgWorkAlt),
     date: "Aug 2018 - Jul 2019",
@@ -135,7 +135,7 @@ export const experiencesData: ExperienceType[] = [
     organisation: "University of Mumbai",
     location: "Mumbai, India",
     description: [
-      "From mathematics, physics, and then computer hardware knowledge, to C, data structure & algos, SQL, Java, Python, Agile Development, UI/UX design and web development, I learned a lot",
+      "My Undergraduate Degree exposed me to basics of CS world ranging of Hardware Design to Web Development, UI/UX development, Object Oriented Programing, Operating System.",
     ],
     icon: React.createElement(LuGraduationCap),
     date: "Aug 2014 - May 2018",
@@ -196,8 +196,7 @@ export const skillsData: SkillsType[] = [
 export const statsData = [
   {
     name: "LeetCode Solved Questions",
-    img_link:
-      "https://leetcard.jacoblin.cool/pthakur2?theme=dark&font=Ubuntu&ext=activity",
+    img_link: "https://leetcard.jacoblin.cool/pthakur2?theme=dark&font=Ubuntu",
   },
   {
     name: "GitHub Stats: My Top Languages",
