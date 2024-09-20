@@ -6,7 +6,7 @@ import { statsData } from "@/lib/data";
 import Stat from "./Stat";
 
 export default function Stats() {
-  const { ref } = useSectionInView("Stats", 0.8);
+  const { ref } = useSectionInView("Stats", 0.7);
 
   return (
     <section ref={ref} id="stats" className="mb-[10rem] scroll-mt-28 px-2">

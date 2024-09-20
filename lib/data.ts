@@ -77,7 +77,7 @@ export const experiencesData: ExperienceType[] = [
     organisation: "JerseySTEM",
     location: "Florham Park, NJ",
     description: [
-      "I am worked as a Software Engineer. My Primary responsibilities included deployment of new microservices api endpoint for data extraction from Salesforce.",
+      "I was involved in deployment of new microservices API endpoint for data extraction from Salesforce.",
     ],
     icon: React.createElement(CgWorkAlt),
     date: "Feb 2024 - May 2024",
