@@ -24,11 +24,11 @@ export default function About() {
         Technology and over four years of professional experience, I have honed
         my skills in Database Administration/Optimization, Software Engineering,
         and data analysis. I am Proficient in{" "}
-        <span className="underline">Python, JavaScript, SQL, </span> and
+        <span className="underline">Python, JavaScript, SQL </span> and
         frameworks such as{" "}
-        <span className="underline"> Spring Boot, Express.js and Django</span> I
-        thrive in dynamic environments where I can apply my technical expertise
-        to drive innovation and deliver tangible results. I{" "}
+        <span className="underline"> Django, Express.js and Apache Spark</span>{" "}
+        I thrive in dynamic environments where I can apply my technical
+        expertise to drive innovation and deliver tangible results. I{" "}
         <span className="underline">love</span> the feeling of finally figuring
         out a solution to a problem. My core stack is{" "}
         <span className="font-medium">

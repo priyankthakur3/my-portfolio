@@ -49,9 +49,11 @@ export default function Intro() {
         <span>
           , Software Developer with {new Date().getFullYear() - 2018 - 1.5}{" "}
           years of experience in Data Engineering. I enjoy building{" "}
-          <span className="italic">sites & apps</span> and binge watch Mystery,
+          <span className="italic">Web apps</span> and binge watch Mystery,
           Sci-fi genre movies and TV Series. My Current focus is{" "}
-          <span className="underline">React (Next.js), Spring Boot</span>
+          <span className="underline">
+            React (Next.js), Flask, Apache Spark
+          </span>
         </span>
       </motion.p>
       <motion.div
