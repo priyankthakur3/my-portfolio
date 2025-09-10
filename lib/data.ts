@@ -31,35 +31,35 @@ import { Project, ExperienceType, SkillsType } from "./types";
 import { useTranslation } from "./hooks";
 
 export const getLinks = () => {
-  const t = useTranslation();
+  // const t = useTranslation();
 
   return [
     {
-      name: t("Home"),
+      name: "Home",
       hash: "#home",
     },
     {
-      name: t("About"),
+      name: "About",
       hash: "#about",
     },
     {
-      name: t("Stats"),
+      name: "Stats",
       hash: "#stats",
     },
     {
-      name: t("Projects"),
+      name: "Projects",
       hash: "#projects",
     },
     {
-      name: t("Skills"),
+      name: "Skills",
       hash: "#skills",
     },
     {
-      name: t("Experience"),
+      name: "Experience",
       hash: "#experience",
     },
     {
-      name: t("Contact"),
+      name: "Contact",
       hash: "#contact",
     },
   ];
