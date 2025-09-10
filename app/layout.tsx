@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 import ThemeSwitch from "@/components/ThemeSwitch";
 import ThemeContextProvider from "@/context/ThemeContextProvider";
+import LangContextProvider from "@/context/LangContextProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -27,13 +28,15 @@ export default function RootLayout({
         {/* <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"></div>
         <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 right-[35rem] h-[31.25rem] w-[60rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem]"></div> */}
         <ThemeContextProvider>
-          <ActiveSectionProvider>
-            <Header />
-            {children}
-            <Footer />
-            <Toaster position="top-right" />
-            <ThemeSwitch />
-          </ActiveSectionProvider>
+          <LangContextProvider>
+            <ActiveSectionProvider>
+              <Header />
+              {children}
+              <Footer />
+              <Toaster position="top-right" />
+              <ThemeSwitch />
+            </ActiveSectionProvider>
+          </LangContextProvider>
         </ThemeContextProvider>
       </body>
     </html>
