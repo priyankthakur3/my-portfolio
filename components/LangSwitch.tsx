@@ -3,7 +3,7 @@ import { useTheme } from "@/context/ThemeContextProvider";
 import React, { useContext } from "react";
 import { BsMoon, BsSun } from "react-icons/bs";
 
-export default function ThemeSwitch() {
+export default function LangSwitch() {
   const { theme, toggleTheme } = useTheme();
 
   return (

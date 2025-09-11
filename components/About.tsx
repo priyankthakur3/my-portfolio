@@ -29,32 +29,25 @@ export default function About() {
         {/* Conditionally render the translation only after component mounts */}
         {mounted && <h1>{t("welcome")}</h1>}
         Driven and results-oriented{" "}
-        <span className="font-medium">Software Engineer</span> with a passion
+        <span className="font-medium">Data Engineer</span> with a passion
         for leveraging technology to solve complex problems. With a
         Master&apos;s degree in Computer Engineering from Stevens Institute of
         Technology and over four years of professional experience, I have honed
-        my skills in Database Administration/Optimization, Software Engineering,
+        my skills in Database Optimization, Software Engineering,
         and data analysis. I am proficient in{" "}
         <span className="underline">Python, JavaScript, SQL </span> and
         frameworks such as{" "}
-        <span className="underline"> Django, Express.js and Apache Spark</span>.
-        I thrive in dynamic environments where I can apply my technical
-        expertise to drive innovation and deliver tangible results. I{" "}
+        <span className="underline"> FastAPI, Express.js and Apache Spark</span>.
+        I specialize in migrating legacy pipelines into cloud native architecture. I{" "}
         <span className="underline">love</span> the feeling of finally figuring
-        out a solution to a problem. My core stack is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am always looking to learn new technologies. I am currently looking
+        out a solution to a problem.I am always looking to learn new technologies. I am currently looking
         for a<span className="font-medium">&nbsp;full-time position</span> as a
-        software developer.
+        Data Engineer.
       </p>
       <p>
         <span className="italic">When I am not coding</span>, I enjoy playing
         video games, watching movies, and playing video games. I also enjoy
-        <span className="font-medium">&nbsp;learning new things</span>. I am
-        currently learning about
-        <span className="font-medium">&nbsp;history and philosophy</span>.
+        <span className="font-medium">&nbsp;learning new things</span>
       </p>
     </motion.section>
   );

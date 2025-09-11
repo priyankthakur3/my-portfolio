@@ -3,6 +3,9 @@ import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import { PiFileSqlDuotone } from "react-icons/pi";
 import { FaHtml5, FaJava, FaGit, FaCss3Alt, FaNodeJs, FaAmazon } from "react-icons/fa";
+import { SiAmazonredshift } from "react-icons/si";
+import { FaAws } from "react-icons/fa6";
+
 
 import {
   SiTypescript,
@@ -101,7 +104,7 @@ export const experiencesData: ExperienceType[] = [
     organisation: "Amazon",
     location: "Austin, TX",
     description: [
-      "Currently I am working as a Data Engineer, I am building framework to efficiently migrate data from legacy EDW to Cloud Environment.",
+      "Currently I am building framework to efficiently migrate data from legacy EDW to Cloud Environment",
     ],
     icon: React.createElement(CgWorkAlt),
     date: "November 2024 - Present",
@@ -112,7 +115,7 @@ export const experiencesData: ExperienceType[] = [
     organisation: "JerseySTEM",
     location: "Florham Park, NJ",
     description: [
-      "Currently I am working as a Data Engineer, And I am built ETL Data Pipeline to migrate data from Salesforce and iCIMS data into MySQL.",
+      "Worked as found Data Engineer, helped in setting up of data infrastructure and establish Data Goverance and Standards",
     ],
     icon: React.createElement(CgWorkAlt),
     date: "May 2024 - October 2024",
@@ -123,7 +126,7 @@ export const experiencesData: ExperienceType[] = [
     organisation: "JerseySTEM",
     location: "Florham Park, NJ",
     description: [
-      "I was involved in deployment of new microservices API endpoint for data extraction from Salesforce.",
+      "Built new microservices API endpoint for data extraction from Salesforce.",
     ],
     icon: React.createElement(CgWorkAlt),
     date: "Feb 2024 - May 2024",
@@ -134,7 +137,7 @@ export const experiencesData: ExperienceType[] = [
     organisation: "Stevens Institute of Technology",
     location: "Hoboken, NJ",
     description: [
-      "I worked as a Graduate Student Assistant at Stevens Institute of Technology",
+      "Worked as Graduate Student Assistant in Food Prep Section",
     ],
     icon: React.createElement(CgWorkAlt),
     date: "Sept 2023 - Dec 2023",
@@ -157,8 +160,7 @@ export const experiencesData: ExperienceType[] = [
     organisation: "Teradata Corporation",
     location: "Mumbai, India",
     description: [
-      "I worked as a Data Engineer wherein I was responsible to build/maintain ETL pipelines, Conduct Code Reviews & implemented Data Quality Rules",
-      "Led team of 4 member, built & maintained SOPs for addressing common & new Data Issues",
+      "I Led team of 4 Data Engineer, built/maintained Sales ETL pipelines, Conduct Code Reviews & implemented Data Quality Rules",
     ],
     icon: React.createElement(CgWorkAlt),
     date: "Aug 2019 - Jan 2022",
@@ -169,7 +171,7 @@ export const experiencesData: ExperienceType[] = [
     organisation: "Teradata Corporation",
     location: "Mumbai, India",
     description: [
-      "My Primary responsibilites was optimizing Database Performance through SQL Doctor Program",
+      "I optimizing Database Performance through SQL Doctor Program",
       "I also worked on automating manual tasks and built performance Monitoring Dashboards. Along with this I Developed SQL Procedures for access control to enforce Data Goverance Policies",
     ],
     icon: React.createElement(CgWorkAlt),
@@ -237,6 +239,8 @@ export const skillsData: SkillsType[] = [
   { title: "Django", icon: SiDjango },
   { title: "FastAPI", icon: SiFastapi },
   { title: "jQuery", icon: SiJquery },
+  { title: "Redshift", icon: SiAmazonredshift}, 
+  { title: "AWS", icon:  FaAws}
 ] as const;
 
 export const statsData = [

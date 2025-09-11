@@ -37,7 +37,7 @@ export default function Intro() {
         </div>
       </div>
       <motion.p
-        className="mb-10 mt-4 px-4 text-xs font-medium sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-xs font-medium sm:text-4xl text-justify"
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -47,12 +47,12 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I am Priyank</span>
         <span>
-          , Software Developer with {new Date().getFullYear() - 2018 - 1.5}{" "}
+          , Data Engineer with {new Date().getFullYear() - 2018 - 1.5}{" "}
           years of experience in Data Engineering. I enjoy building{" "}
-          <span className="italic">Web apps</span> and binge watch Mystery,
+          <span className="italic">Web apps and Data Pipeline</span> and binge watch Mystery,
           Sci-fi genre movies and TV Series. My Current focus is{" "}
           <span className="underline">
-            React (Next.js), Flask, Apache Spark
+           Flask, Spark, LLM integration in Data Pipelines
           </span>
         </span>
       </motion.p>
