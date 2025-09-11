@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import { PiFileSqlDuotone } from "react-icons/pi";
-import { FaHtml5, FaJava, FaGit, FaCss3Alt, FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaJava, FaGit, FaCss3Alt, FaNodeJs, FaAmazon } from "react-icons/fa";
 
 import {
   SiTypescript,
@@ -28,7 +28,42 @@ import {
 import clickchaser from "@/public/clickchaser.png";
 import campuscompass from "@/public/campuscompass.png";
 import { Project, ExperienceType, SkillsType } from "./types";
+import { useTranslation } from "./hooks";
 
+export const getLinks = () => {
+  // const t = useTranslation();
+
+  return [
+    {
+      name: "Home",
+      hash: "#home",
+    },
+    {
+      name: "About",
+      hash: "#about",
+    },
+    {
+      name: "Stats",
+      hash: "#stats",
+    },
+    {
+      name: "Projects",
+      hash: "#projects",
+    },
+    {
+      name: "Skills",
+      hash: "#skills",
+    },
+    {
+      name: "Experience",
+      hash: "#experience",
+    },
+    {
+      name: "Contact",
+      hash: "#contact",
+    },
+  ];
+};
 export const links = [
   {
     name: "Home",
@@ -62,14 +97,25 @@ export const links = [
 
 export const experiencesData: ExperienceType[] = [
   {
+    title: "Data Engineer (Contract)",
+    organisation: "Amazon",
+    location: "Austin, TX",
+    description: [
+      "Currently I am working as a Data Engineer, I am building framework to efficiently migrate data from legacy EDW to Cloud Environment.",
+    ],
+    icon: React.createElement(CgWorkAlt),
+    date: "November 2024 - Present",
+    type: "work",
+  },
+  {
     title: "Data Engineer",
     organisation: "JerseySTEM",
     location: "Florham Park, NJ",
     description: [
-      "Currently I am working as a Data Engineer, And I am building ETL Data Pipeline to migrate data from Salesforce and iCIMS data into MySQL.",
+      "Currently I am working as a Data Engineer, And I am built ETL Data Pipeline to migrate data from Salesforce and iCIMS data into MySQL.",
     ],
     icon: React.createElement(CgWorkAlt),
-    date: "May 2024 - Present",
+    date: "May 2024 - October 2024",
     type: "work",
   },
   {

@@ -2,7 +2,6 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
 type Theme = "light" | "dark";
-type Lang = "en" | "es";
 type ThemeContextProviderProps = {
   children: React.ReactNode;
 };
@@ -10,7 +9,6 @@ type ThemeContextProviderProps = {
 type ThemeContextType = {
   theme: Theme;
   toggleTheme: () => void;
-  toggleLang: () => void;
 };
 
 const ThemeContext = createContext<ThemeContextType | null>(null);
@@ -19,6 +17,7 @@ export default function ThemeContextProvider({
   children,
 }: ThemeContextProviderProps) {
   const [theme, setTheme] = useState<Theme>("light");
+
   const toggleTheme = () => {
     if (theme === "light") {
       setTheme("dark");
@@ -30,7 +29,7 @@ export default function ThemeContextProvider({
       document.documentElement.classList.remove("dark");
     }
   };
-  const toggleLang = () => {};
+
   useEffect(() => {
     const localTheme = window.localStorage.getItem("theme") as Theme | null;
     if (localTheme === "dark") {
@@ -42,7 +41,7 @@ export default function ThemeContextProvider({
     }
   }, []);
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme, toggleLang }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   );

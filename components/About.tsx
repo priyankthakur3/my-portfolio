@@ -1,10 +1,19 @@
 "use client";
-import React from "react";
+
+import React, { useState, useEffect } from "react";
 import SectionHeader from "./SectionHeader";
 import { motion } from "framer-motion";
-import { useSectionInView } from "@/lib/hooks";
+import { useSectionInView, useTranslation } from "@/lib/hooks";
+
 export default function About() {
+  const [mounted, setMounted] = useState(false); // Track if component is mounted
+  const t = useTranslation(); // Use the translation hook
   const { ref } = useSectionInView("About");
+
+  // Set mounted to true after the component mounts
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <motion.section
@@ -17,16 +26,18 @@ export default function About() {
     >
       <SectionHeader>About Me</SectionHeader>
       <p className="mb-3">
+        {/* Conditionally render the translation only after component mounts */}
+        {mounted && <h1>{t("welcome")}</h1>}
         Driven and results-oriented{" "}
         <span className="font-medium">Software Engineer</span> with a passion
         for leveraging technology to solve complex problems. With a
         Master&apos;s degree in Computer Engineering from Stevens Institute of
         Technology and over four years of professional experience, I have honed
         my skills in Database Administration/Optimization, Software Engineering,
-        and data analysis. I am Proficient in{" "}
+        and data analysis. I am proficient in{" "}
         <span className="underline">Python, JavaScript, SQL </span> and
         frameworks such as{" "}
-        <span className="underline"> Django, Express.js and Apache Spark</span>{" "}
+        <span className="underline"> Django, Express.js and Apache Spark</span>.
         I thrive in dynamic environments where I can apply my technical
         expertise to drive innovation and deliver tangible results. I{" "}
         <span className="underline">love</span> the feeling of finally figuring
@@ -43,7 +54,7 @@ export default function About() {
         video games, watching movies, and playing video games. I also enjoy
         <span className="font-medium">&nbsp;learning new things</span>. I am
         currently learning about
-        <span className="font-medium">&nbsp;history and philosophy</span>
+        <span className="font-medium">&nbsp;history and philosophy</span>.
       </p>
     </motion.section>
   );

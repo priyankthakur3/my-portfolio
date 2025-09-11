@@ -9,7 +9,9 @@ export type Project = {
   imageUrl: StaticImageData; // Assuming imageUrl is a string
 };
 
-export type SectionName = (typeof links)[number]["name"];
+export type SectionName = String;
+
+// export type SectionName = (typeof links)[number]["name"];
 
 export type ActiveSectionProviderProps = {
   children: React.ReactNode;
